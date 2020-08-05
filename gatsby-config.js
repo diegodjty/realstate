@@ -8,6 +8,14 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: 'gatsby-source-strapi',
+      options:{
+        apiURL: 'http://localhost:1337',
+        queryLimit: 1000,
+        contentTypes: ['Properties','Pages','Categories']
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

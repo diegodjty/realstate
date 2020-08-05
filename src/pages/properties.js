@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './../components/Layout';
-const properties = () => {
+const Properties = () => {
     return (
         <Layout>
             <h1>Properties</h1>
@@ -8,4 +8,4 @@ const properties = () => {
     );
 };
 
-export default properties;
+export default Properties;
