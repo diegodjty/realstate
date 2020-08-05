@@ -1,13 +1,11 @@
 import React from 'react';
 import Layout from './../components/Layout';
-
-
-const index = () => {
+const properties = () => {
     return (
         <Layout>
-            <h1>Home</h1>           
+            <h1>Properties</h1>
         </Layout>
     );
 };
 
-export default index;
+export default properties;
