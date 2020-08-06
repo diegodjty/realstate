@@ -10,7 +10,9 @@ const useIndex = () => {
         content
         img{
           sharp: childImageSharp{
-              fluid( maxWidth: 1200){
+              fluid( maxWidth: 1800 duotone: {
+                  highlight: "#222222", shadow: "#192550", opacity: 30
+              }){
                   ...GatsbyImageSharpFluid_withWebp
               }
           }

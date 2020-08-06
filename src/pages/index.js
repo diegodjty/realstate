@@ -4,6 +4,8 @@ import useIndex from './../hooks/useIndex';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 import BackgroundImage from 'gatsby-background-image'
+import heroCSS from '../css/hero.module.css'
+import Find from './../components/Find';
 
 const ImgBackground = styled(BackgroundImage)`
     height: 600px;
@@ -18,8 +20,8 @@ const Index = () => {
                 fluid={img.sharp.fluid}
                 fadeIn="soft"
             >
-                <div>
-                    <h1></h1>
+                <div className={heroCSS.image}>
+                    <h1 className={heroCSS.title}>Exclusive sale of Houses and Apartments</h1>
                 </div>
 
             </ImgBackground>
@@ -30,8 +32,9 @@ const Index = () => {
                 `}>
                 </div>
                 <h1>{name}</h1>
-                <p css={css`text-align: center`}>{content}</p>
+                <p css={css`text-align: center;`}>{content}</p>
             </main>
+            <Find />
            
         </Layout>
     );
