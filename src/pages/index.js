@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import BackgroundImage from 'gatsby-background-image'
 import heroCSS from '../css/hero.module.css'
 import Find from './../components/Find';
+import PropertiesList from './../components/PropertiesList';
 
 const ImgBackground = styled(BackgroundImage)`
     height: 600px;
@@ -35,6 +36,7 @@ const Index = () => {
                 <p css={css`text-align: center;`}>{content}</p>
             </main>
             <Find />
+            <PropertiesList />
            
         </Layout>
     );
