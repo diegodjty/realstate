@@ -3,7 +3,7 @@ import { graphql,useStaticQuery } from 'gatsby';
 import {css} from "@emotion/core";
 import useProperties from './../hooks/useProperties';
 import PropertyPreview from './PropertyPreview';
-
+import PropertiesListCSS from '../css/PropertiesList.module.css'
 
 const PropertiesList = () => {
 
@@ -13,7 +13,7 @@ const PropertiesList = () => {
         <>
             <h2 css={css`margin-top: 5rem;`}>Our Properties</h2>
 
-            <ul>
+            <ul className={PropertiesListCSS.properties}>
                 {result.map( property =>(
                     <PropertyPreview key={property.id} property={property}/>
                 ))}
